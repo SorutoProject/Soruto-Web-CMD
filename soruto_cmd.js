@@ -18,7 +18,7 @@ function run(){
 	 if(csv == "404 Error"){}else{check(csv,uc);}//404 check
     }
         if (xhr.readyState === 4 && xhr.status === 404){
-	So_divIHT("res","Error\""+ uc[0] +"\":Command not found.");
+	So_divIHT("res","Error\""+ uc[0] +"\":Command not found.<br>");
     }
     if (xhr.readyState === 4 && xhr.status === 0){
       var csv = xhr.responseText;
