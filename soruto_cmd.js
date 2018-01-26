@@ -30,6 +30,6 @@ function run(){
 function check(csv,uc){
 	var ch = csv.split("*").join(uc[1]);
 	var vals = ch.split(" ");
-	if(vals[0] == "echo"){So_divIHT(vals[1]);}
+	if(vals[0] == "echo"){So_divIHT("res",vals[1]+"<br>");}
 	else{So_divIHT("res","Error:\""+uc[0]+"\" This command file is broken.<br>");}
 }
