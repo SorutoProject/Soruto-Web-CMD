@@ -17,6 +17,9 @@ function run(){
      var csv = xhr.responseText;
 	 if(csv == "404 Error"){}else{check(csv,uc);}//404 check
     }
+        if (xhr.readyState === 4 && xhr.status === 400){
+	So_divIHT("res","Error\""+ uc[0] +"\":Command not found.");
+    }
     if (xhr.readyState === 4 && xhr.status === 0){
       var csv = xhr.responseText;
 	  if(csv == "404 Error"){}else{check(csv,uc);}//404 check
@@ -28,5 +31,5 @@ function check(csv,uc){
 	var ch = csv.split("*").join(uc[1]);
 	var vals = ch.split(" ");
 	if(vals[0] == "echo"){So_divIHT(vals[1]);}
-	else{So_divIHT("res","Error:\""+uc[0]+"\" そのようなコマンドは存在しません<br>");}
+	else{So_divIHT("res","Error:\""+uc[0]+"\" This command file is broken.<br>");}
 }
