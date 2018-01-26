@@ -1,4 +1,4 @@
 # Soruto-Web-CMD
 Soruto EJBを利用したサンプルプログラムです。
 
-[テストページ](https://github.io/SorutoProject/Soruto-Web-CMD/)
+[テストページ](https://sorutoproject.github.io/Soruto-Web-CMD/)
